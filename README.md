@@ -1,6 +1,6 @@
 # clock
 
-Multiple clocks from different timezones.
+The User can view the time from multiple timezones in the world.
 
 # Usage
 `
