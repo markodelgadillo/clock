@@ -29,5 +29,5 @@ $ path
 
 # Screenshot
 
-
+![issue-1-animation](https://user-images.githubusercontent.com/13569476/31964886-636b2aa0-b8ba-11e7-8093-2430b69f49c4.gif)
 
