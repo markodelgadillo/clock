@@ -29,4 +29,4 @@ The User can view the time from multiple timezones in the world.
 
 # Screenshot
 
-
+![issue-1-animation](https://user-images.githubusercontent.com/13569476/31965194-662e42ee-b8bb-11e7-8660-9654e8e4ab95.gif)
