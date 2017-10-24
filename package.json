@@ -2,7 +2,7 @@
   "name": "clock",
   "version": "1.0.0",
   "description": "Multiple clocks from different timezones.",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
     "start": "npm index.js",
     "watch": "nodemon index.js",
@@ -21,7 +21,6 @@
   "homepage": "https://github.com/markodelgadillo/clock#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "moment-timezone": "^0.5.13",
     "mongodb": "^2.2.33",
     "path": "^0.12.7"
   },

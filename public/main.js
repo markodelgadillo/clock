@@ -11,14 +11,6 @@ function times(areas) {
   return zones
 }
 
-// const render = time =>
-//   (($time, $value) => {
-//     $time.classList.add('time')
-//     $value.textContent = `${time.zone} ${time.time}`
-//     $value.classList.add('value')
-//     return $time.appendChild($value).parentNode
-//   })(document.createElement('div'), document.createElement('div'))
-
 function render(time) {
   const $time = document.createElement('div')
   const $value = document.createElement('div')
@@ -35,7 +27,7 @@ const timezones = () => {
 
 const zones = timezones()
 
-const doWerk = () => {
+const doWork = () => {
   zones
     .then(data => times(data))
     .then(data => data.map(render))
@@ -47,4 +39,4 @@ const doWerk = () => {
     })
 }
 
-setInterval(doWerk, 16)
+setInterval(doWork, 16)

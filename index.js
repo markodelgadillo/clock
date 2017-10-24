@@ -2,7 +2,6 @@ const { MongoClient } = require('mongodb')
 const express = require('express')
 const app = express()
 const seed = require('./seed.js')
-const moment = require('moment-timezone')
 const path = require('path')
 app.use(express.static('./public'))
 
