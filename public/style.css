@@ -14,7 +14,7 @@ body {
   float: left;
   position: relative;
   background: #08f;
-  background: radial-gradient(ellipse at center, #0a2e38 0%, #000, 70%);
+  background: radial-gradient(#0a2e38 0%, #000, 70%);
   background-size: 100%;
   text-align: center;
   width: calc(100vh / 3);
@@ -22,8 +22,6 @@ body {
 }
 
 .value {
-  letter-spacing: 0.5rem;
-  margin-top: 17px;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.7rem;
   color: #fff;
