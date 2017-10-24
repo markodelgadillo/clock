@@ -5,7 +5,7 @@ function times(areas) {
     zone.zone = areas[i].split('/')[1].replace('_', ' ')
     zone.time = moment()
       .tz(areas[i])
-      .format('hh:mm:ss a')
+      .format('hh:mm:ssa')
     zones.push(zone)
   }
   return zones
