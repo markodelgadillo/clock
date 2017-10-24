@@ -4,12 +4,12 @@ The User can view the time from multiple timezones in the world.
 
 # Usage
 
-> $ npm install
-> $ mongodb
-> $ express
-> $ start
-> $ nodemon -dev
-> $ path
+* $ npm install
+* $ mongodb
+* $ express
+* $ start
+* $ nodemon -dev
+* $ path
 
 
 # Uses
