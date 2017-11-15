@@ -26,10 +26,6 @@ const Value = styled.div`
   transform: translate(-50%, -50%);
   text-shadow: -1px 3px 0 #0a0e27;
 `
-const timezones = () => {
-  return fetch('http://localhost:8888/timezones').then(res => res.json())
-}
-const zones = timezones()
 
 function times(areas) {
   const zones = []
