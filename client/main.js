@@ -17,7 +17,7 @@ const Time = styled.div`
 
 const Value = styled.div`
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: #fff;
   text-align: center;
   position: absolute;
@@ -60,7 +60,14 @@ class Clock extends React.Component {
   }
 
   componentDidMount() {
-    setInterval(() => this.tick(), 500)
+    setInterval(() => this.tick(), 1000)
+  }
+
+  componentWillMount() {
+    const timezones = () => {
+      return fetch('http://localhost:8888/timezones').then(res => res.json())
+    }
+    const zones = timezones()
   }
 
   tick() {
@@ -71,7 +78,7 @@ class Clock extends React.Component {
 
   render() {
     return this.state.timezones.map(timezone => (
-      <Time key={timezone.zone}>
+      <Time>
         <Value>
           {timezone.zone},<br /> {timezone.time}
         </Value>
@@ -81,6 +88,7 @@ class Clock extends React.Component {
 }
 
 render(<Clock />, document.querySelector('#times'))
+
 /*
 // old code
 
