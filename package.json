@@ -2,10 +2,12 @@
   "name": "clock",
   "version": "1.0.0",
   "description": "Multiple clocks from different timezones.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "npm index.js",
     "watch": "nodemon index.js",
+    "bundle": "browserify client/main.js -t babelify -o server/public/bundle.js",
+    "bundle:watch": "watchify client/main.js -vd -t babelify -o server/public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,11 +22,24 @@
   },
   "homepage": "https://github.com/markodelgadillo/clock#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "create-babelrc": "^0.1.0",
     "express": "^4.16.2",
+    "moment": "^2.19.2",
+    "moment-timezone": "^0.5.14",
     "mongodb": "^2.2.33",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-moment": "^0.6.8",
+    "styled-components": "^2.2.3"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "nodemon": "^1.12.1",
+    "watchify": "^3.9.0"
   }
 }
